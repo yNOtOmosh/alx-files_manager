@@ -242,6 +242,7 @@ export default class FilesController {
         ? 0
         : file.parentId.toString(),
     })
+  }
 
   static async getFile(req, res) {
     const user = await getUserFromXToken(req);
